@@ -1,0 +1,121 @@
+/* ═══════════════════════════════════════════════════════════
+   STACK.CSS
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Grid ── */
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+/* ── Responsivo ── */
+@media (max-width: 900px) {
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Bloco por categoria ── */
+.stack-block {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 22px 24px;
+  transition: 
+    border-color var(--dur) var(--ease),
+    transform var(--dur) var(--ease);
+}
+
+.stack-block:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+}
+
+.stack-block__label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  margin-bottom: 14px;
+}
+
+/* ── Chips ── */
+.stack-block__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ── Chip base ── */
+.stack-chip {
+  display: inline-flex; /* 🔥 necessário para ícone */
+  align-items: center;
+  gap: 8px;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--text-2);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  padding: 6px 12px;
+  border-radius: var(--r);
+
+  transition:
+    color        var(--dur) var(--ease),
+    background   var(--dur) var(--ease),
+    border-color var(--dur) var(--ease),
+    transform    var(--dur) var(--ease);
+
+  cursor: default;
+}
+
+/* ── Ícone ── */
+.stack-chip__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  color: var(--purple);
+
+  transition: transform var(--dur) var(--ease);
+}
+
+/* ── Hover ── */
+.stack-chip:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
+}
+
+.stack-chip:hover .stack-chip__icon {
+  transform: scale(1.15);
+}
+
+/* ── Chip destaque ── */
+.stack-chip--hi {
+  color: var(--purple-light);
+  background: var(--purple-dim);
+  border-color: var(--purple-border);
+}
+
+.stack-chip--hi .stack-chip__icon {
+  color: var(--purple-light);
+}
+
+.stack-chip--hi:hover {
+  background: rgba(139, 92, 246, 0.18);
+  border-color: rgba(139, 92, 246, 0.35);
+  color: #c4b5fd;
+}
+
+/* ── Micro detalhe premium ── */
+.stack-chip:active {
+  transform: scale(0.97);
+}
