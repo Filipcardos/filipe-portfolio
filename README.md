@@ -2,7 +2,7 @@
 
 Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluidas e design responsivo. Acesse a versão ao vivo:
 
-🔗 **[filipe-portfolio-nine.vercel.app](https://filipe-portfolio-nine.vercel.app)**
+🔗 **[filipe-portfolio-nine.vercel.app](https://filipe-portfolio.vercel.app)**
 
 ---
 
