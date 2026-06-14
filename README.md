@@ -76,4 +76,4 @@ Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo [LICENS
 
 ---
 
-Feito com ❤️ por [Filipe Cardoso](https://github.com/Filipcardos)
+Feito por [Filipe Cardoso](https://github.com/Filipcardos)
