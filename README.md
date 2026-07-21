@@ -6,7 +6,7 @@ Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluida
 
 ---
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 - [React 18](https://react.dev/) — biblioteca para construção de interfaces
 - [Vite 5](https://vitejs.dev/) — bundler rápido para desenvolvimento moderno
@@ -14,8 +14,6 @@ Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluida
 - [React Icons](https://react-icons.github.io/react-icons/) — ícones de diversas bibliotecas populares
 
 ---
-
-## 📦 Instalação e uso local
 
 ### Pré-requisitos
 
