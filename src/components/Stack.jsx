@@ -10,36 +10,45 @@ import {
   SiJavascript,
   SiHtml5,
   SiPostman,
-  SiReact,
+  SiPandas,
+  SiScikitlearn,
+  SiJupyter,
+  SiLinux,
 } from 'react-icons/si'
 
-import { FaDatabase } from 'react-icons/fa'
+import { FaDatabase, FaCss3Alt, FaFileExcel } from 'react-icons/fa'
+import { VscVscode } from 'react-icons/vsc'
+import { BsKanban } from 'react-icons/bs'
 
 // MAPA DE ÍCONES
 const iconMap = {
-  // Backend
+  // Linguagens & Backend
   Python: <SiPython />,
   FastAPI: '⚡',
-  Flask: '⚡', // fallback visual parecido
-  'REST APIs': '🔗',
-  'JWT Auth': '🔐',
-
-  // Frontend
+  'APIs REST': '🔗',
   JavaScript: <SiJavascript />,
   HTML: <SiHtml5 />,
-  React: <SiReact />,
+  CSS: <FaCss3Alt />,
+
+  // Dados & BI
+  Pandas: <SiPandas />,
+  'Scikit-learn': <SiScikitlearn />,
+  'Jupyter Notebook': <SiJupyter />,
+  'Power BI': '📊',
 
   // Banco de Dados
   PostgreSQL: <SiPostgresql />,
   SQL: <FaDatabase />,
-  MySQL: <FaDatabase />,
+  TSQL: <FaDatabase />,
 
-  // Ferramentas
+  // Ferramentas & Processos
   'Git / GitHub': <SiGithub />,
   Docker: <SiDocker />,
-  Linux: '🐧',
+  Linux: <SiLinux />,
+  'VS Code': <VscVscode />,
   Postman: <SiPostman />,
-  'VS Code': '💻',
+  'Excel Avançado': <FaFileExcel />,
+  'Scrum / Kanban': <BsKanban />,
 }
 
 export default function Stack() {

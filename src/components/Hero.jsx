@@ -54,7 +54,7 @@ export default function Hero() {
         </div>
 
         {/* Coluna direita — foto */}
-        <div className="hero__photo-wrap" aria-hidden="true">
+        <div className="hero__photo-wrap">
           <div className="hero__photo">
             {PROFILE.photo ? (
               <img
@@ -70,13 +70,6 @@ export default function Hero() {
               </div>
             )}
           </div>
-
-          {/* Badge de disponibilidade sobre a foto */}
-          {PROFILE.available && (
-            <div className="hero__photo-badge">
-              <span className="hero__photo-badge-text">Online</span>
-            </div>
-          )}
         </div>
 
       </div>

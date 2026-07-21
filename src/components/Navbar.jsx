@@ -12,7 +12,7 @@ export default function Navbar() {
   }, [])
 
   const links = [
-    { label: 'Sobre',      href: '#about'    },
+    { label: 'Sobre',      href: '#home'     },
     { label: 'Trajetória', href: '#timeline' },
     { label: 'Projetos',   href: '#projects' },
     { label: 'Stack',      href: '#stack'    },
