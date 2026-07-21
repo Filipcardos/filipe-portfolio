@@ -20,24 +20,6 @@ Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluida
 - [Node.js](https://nodejs.org/) versão 18 ou superior
 - npm ou yarn
 
-### Passos
-
-```bash
-# Clone o repositório
-git clone https://github.com/Filipcardos/filipe-portfolio.git
-
-# Entre na pasta do projeto
-cd filipe-portfolio
-
-# Instale as dependências
-npm install
-
-# Inicie o servidor de desenvolvimento
-npm run dev
-```
-
-O projeto estará disponível em `http://localhost:5173`.
-
 ---
 
 ## 📜 Scripts disponíveis
