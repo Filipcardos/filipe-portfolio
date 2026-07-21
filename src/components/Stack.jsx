@@ -14,9 +14,10 @@ import {
   SiScikitlearn,
   SiJupyter,
   SiLinux,
+  SiFastapi,
 } from 'react-icons/si'
 
-import { FaDatabase, FaCss3Alt, FaFileExcel } from 'react-icons/fa'
+import { FaDatabase, FaCss3Alt, FaFileExcel, FaChartBar } from 'react-icons/fa'
 import { VscVscode } from 'react-icons/vsc'
 import { BsKanban } from 'react-icons/bs'
 
@@ -24,7 +25,7 @@ import { BsKanban } from 'react-icons/bs'
 const iconMap = {
   // Linguagens & Backend
   Python: <SiPython />,
-  FastAPI: '⚡',
+  FastAPI: <SiFastapi />,
   'APIs REST': '🔗',
   JavaScript: <SiJavascript />,
   HTML: <SiHtml5 />,
@@ -34,7 +35,7 @@ const iconMap = {
   Pandas: <SiPandas />,
   'Scikit-learn': <SiScikitlearn />,
   'Jupyter Notebook': <SiJupyter />,
-  'Power BI': '📊',
+  'Power BI': <FaChartBar />,
 
   // Banco de Dados
   PostgreSQL: <SiPostgresql />,
