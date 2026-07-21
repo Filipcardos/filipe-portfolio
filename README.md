@@ -22,7 +22,7 @@ Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluida
 
 ---
 
-## 📜 Scripts disponíveis
+##  Scripts disponíveis
 
 | Comando | Descrição |
 |---|---|
@@ -32,7 +32,7 @@ Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluida
 
 ---
 
-## 📁 Estrutura do projeto
+##  Estrutura do projeto
 
 ```
 filipe-portfolio/
