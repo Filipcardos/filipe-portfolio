@@ -89,18 +89,23 @@ export const PROJECTS = [
 
 export const STACK = [
   {
-    group: 'Backend',
+    group: 'Linguagens & Backend',
     items: [
       { name: 'Python',      highlight: true },
       { name: 'FastAPI',     highlight: true },
       { name: 'APIs REST',   highlight: false },
+      { name: 'JavaScript',  highlight: false },
+      { name: 'HTML',        highlight: false },
+      { name: 'CSS',         highlight: false },
     ],
   },
   {
-    group: 'Dados',
+    group: 'Dados & BI',
     items: [
-      { name: 'Pandas',      highlight: true },
-      { name: 'Scikit-learn',highlight: false },
+      { name: 'Pandas',           highlight: true },
+      { name: 'Scikit-learn',     highlight: false },
+      { name: 'Jupyter Notebook', highlight: false },
+      { name: 'Power BI',         highlight: false },
     ],
   },
   {
@@ -108,13 +113,19 @@ export const STACK = [
     items: [
       { name: 'PostgreSQL',  highlight: true },
       { name: 'SQL',         highlight: true },
+      { name: 'TSQL',        highlight: false },
     ],
   },
   {
-    group: 'Ferramentas',
+    group: 'Ferramentas & Processos',
     items: [
-      { name: 'Git / GitHub',highlight: true },
-      { name: 'Docker',      highlight: false },
+      { name: 'Git / GitHub',    highlight: true },
+      { name: 'Docker',          highlight: false },
+      { name: 'Linux',           highlight: false },
+      { name: 'VS Code',         highlight: false },
+      { name: 'Postman',         highlight: false },
+      { name: 'Excel Avançado',  highlight: false },
+      { name: 'Scrum / Kanban',  highlight: false },
     ],
   },
 ]
