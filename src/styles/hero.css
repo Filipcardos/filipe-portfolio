@@ -196,38 +196,32 @@
   line-height: 1.5;
 }
 
-/* Badge sobre a foto */
-.hero__photo-badge {
-  margin-top: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--green);
-  background: var(--green-dim);
-  border: 1px solid var(--green-border);
-  padding: 6px 14px;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.hero__photo-badge-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green);
-  animation: pulse-dot 2.2s ease-in-out infinite;
-  flex-shrink: 0;
-}
-
 /* ── Responsivo ── */
 @media (max-width: 760px) {
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 40px;
-    padding: 48px 0 64px;
+    gap: 28px;
+    padding: 40px 0 56px;
   }
-  .hero__photo-wrap { display: none; }
+
+  /* Foto aparece acima do texto no mobile, centralizada */
+  .hero__photo-wrap {
+    order: -1;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero__photo {
+    width: 220px;
+    height: 288px;
+    margin: 0 auto;
+  }
   .hero__title { font-size: clamp(44px, 12vw, 64px); }
+}
+
+/* Telas bem pequenas (celulares em retrato) */
+@media (max-width: 400px) {
+  .hero__photo {
+    width: 180px;
+    height: 236px;
+  }
 }
