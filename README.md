@@ -50,7 +50,7 @@ O projeto é implantado automaticamente na [Vercel](https://vercel.com/) a cada 
 
 ---
 
-## 📄 Licença
+##  Licença 
 
 Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
 
