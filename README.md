@@ -1,4 +1,4 @@
-# 💼 Filipe Cardoso — Portfolio
+#  Filipe Cardoso — Portfolio
 
 Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluidas e design responsivo. Acesse a versão ao vivo:
 
@@ -44,7 +44,7 @@ filipe-portfolio/
 
 ---
 
-## 🌐 Deploy
+##  Deploy
 
 O projeto é implantado automaticamente na [Vercel](https://vercel.com/) a cada push na branch `main`.
 
