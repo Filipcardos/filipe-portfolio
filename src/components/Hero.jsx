@@ -46,7 +46,7 @@ export default function Hero() {
 
           {/* Linha de status inferior */}
           <div className="hero__status">
-            <span className="hero__status-loc">📍 {PROFILE.location}</span>
+            <span className="hero__status-loc"> {PROFILE.location}</span>
             <span className="hero__status-sep" aria-hidden="true" />
             <span className="hero__status-info">Análise e Desenvolvimento de Sistemas · Bacharel em Administração</span>
           </div>
