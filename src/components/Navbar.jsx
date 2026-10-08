@@ -1,51 +1,40 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { PROFILE } from '../data'
-import '../styles/navbar.css'
+
+const LINKS = [
+  { label: 'Sobre',      href: '#about'    },
+  { label: 'Trajetória', href: '#timeline' },
+  { label: 'Processo',   href: '#process'  },
+  { label: 'Projetos',   href: '#projects' },
+  { label: 'Stack',      href: '#stack'    },
+]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handler = () => setScrolled(window.scrollY > 40)
-    window.addEventListener('scroll', handler, { passive: true })
-    return () => window.removeEventListener('scroll', handler)
-  }, [])
-
-  const links = [
-    { label: 'Sobre',      href: '#home'     },
-    { label: 'Trajetória', href: '#timeline' },
-    { label: 'Projetos',   href: '#projects' },
-    { label: 'Stack',      href: '#stack'    },
-    { label: 'Contato',    href: '#contact'  },
-  ]
+  const [open, setOpen] = useState(false)
 
   return (
-    <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`} aria-label="Navegação principal">
-      <div className="container navbar__inner">
-
-        {/* Logo / marca */}
-        <a href="#home" className="navbar__logo" aria-label="Voltar ao topo">
-          fc<span className="navbar__logo-dot">.</span>
+    <header className="nav">
+      <div className="wrap nav__bar">
+        <a className="brand" href="#home" aria-label={`${PROFILE.name}, voltar ao topo`}>
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <rect x=".75" y=".75" width="30.5" height="30.5" rx="7" fill="#000" stroke="#292d30" strokeWidth="1.5" />
+            <text x="16" y="21.6" textAnchor="middle" fontFamily="Inter,system-ui,sans-serif" fontWeight="600" fontSize="15" letterSpacing="-.6" fill="#fff">FC</text>
+          </svg>
         </a>
 
-        {/* Links de navegação */}
-        <ul className="navbar__links" role="list">
-          {links.map(({ label, href }) => (
-            <li key={href}>
-              <a href={href} className="navbar__link">{label}</a>
-            </li>
+        <nav aria-label="Principal" className={`nav__links${open ? ' open' : ''}`}>
+          {LINKS.map(l => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>
           ))}
-        </ul>
+        </nav>
 
-        {/* CTA disponibilidade */}
-        {PROFILE.available && (
-          <a href="#contact" className="navbar__cta">
-            <span className="navbar__cta-dot" aria-hidden="true" />
-            Disponível
-          </a>
-        )}
-
+        <div className="nav__end">
+          <a className="btn" href="#contact">Contato</a>
+          <button className="nav__toggle" type="button" aria-expanded={open} aria-label="Abrir menu" onClick={() => setOpen(o => !o)}>
+            <span /><span />
+          </button>
+        </div>
       </div>
-    </nav>
+    </header>
   )
 }
