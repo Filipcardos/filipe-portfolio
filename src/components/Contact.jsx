@@ -10,7 +10,7 @@ export default function Contact() {
           <div>
             <img src={PROFILE.photo} alt={`Foto de ${PROFILE.name}`} />
             <p className="lead lead--flush">Busco uma vaga de Analista de Sistemas ou Desenvolvedor Backend, em regime remoto.</p>
-            <a className="mail" href={`mailto:${PROFILE.email}`}>{PROFILE.email}</a>
+            
           </div>
           <div className="row">
             <a className="btn" href={`mailto:${PROFILE.email}`}>Enviar e-mail</a>
