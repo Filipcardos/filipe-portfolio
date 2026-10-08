@@ -12,7 +12,7 @@ export const PROFILE = {
   linkedin:  'https://www.linkedin.com/in/filipe-cardoso-919532205',
   github:    'https://github.com/Filipcardos',
   photo:     foto,
-  available: true,
+  available: false,
   bio: [
     'Estudante de Análise e Desenvolvimento de Sistemas com base em Administração.',
     'Tenho experiência com automação de processos e organização de dados usando Python.',
