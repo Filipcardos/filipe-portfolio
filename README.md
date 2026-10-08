@@ -1,59 +1,13 @@
-#  Filipe Cardoso — Portfolio
+# Filipe Cardoso — Portfólio
 
-Portfólio pessoal desenvolvido com **React** e **Vite**, com animações fluidas e design responsivo. Acesse a versão ao vivo:
+React + Vite. Layout inspirado no design system **Resend** (preto puro, bordas finas, janela de código e cubo mágico 3D em WebGL).
 
-🔗 **[filipe-cardoso.vercel.app](https://filipe-cardoso.vercel.app)**
-
----
-
-##  Tecnologias
-
-- [React 18](https://react.dev/) — biblioteca para construção de interfaces
-- [Vite 5](https://vitejs.dev/) — bundler rápido para desenvolvimento moderno
-- [Framer Motion](https://www.framer.com/motion/) — animações e transições suaves
-- [React Icons](https://react-icons.github.io/react-icons/) — ícones de diversas bibliotecas populares
-
----
-
-### Pré-requisitos
-
-- [Node.js](https://nodejs.org/) versão 18 ou superior
-- npm ou yarn
-
----
-
-##  Scripts disponíveis
-
-| Comando | Descrição |
-|---|---|
-| `npm run dev` | Inicia o servidor de desenvolvimento |
-| `npm run build` | Gera a build de produção |
-| `npm run preview` | Pré-visualiza a build de produção localmente |
-
----
-
-##  Estrutura do projeto
-
-```
-filipe-portfolio/
-├── src/             # Código-fonte (componentes, estilos, assets)
-├── index.html       # HTML base
-├── vite.config.js   # Configuração do Vite
-└── package.json     # Dependências e scripts
+```bash
+npm install
+npm run dev      # desenvolvimento
+npm run build    # produção
 ```
 
----
-
-##  Deploy
-
-O projeto é implantado automaticamente na [Vercel](https://vercel.com/) a cada push na branch `main`.
-
----
-
-##  Licença 
-
-Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo [LICENSE](./LICENSE) para mais detalhes.
-
----
-
-Feito por [Filipe Cardoso](https://github.com/Filipcardos)
+- Conteúdo (perfil, trajetória, projetos, stack): `src/data.js`
+- Tokens de design: `src/styles/variables.css`; estilos: `src/styles/global.css`
+- Cubo 3D: `src/components/Cube.jsx` (three.js 0.160). Para ajustar o brilho, mexa nas intensidades das luzes; para o ritmo, nos tempos de `wait` e da rotação das camadas.
