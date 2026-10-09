@@ -21,30 +21,26 @@ export const PROFILE = {
 }
 
 export const TIMELINE = [
-  
   {
-    period:  '2024 — 2026 - hoje',
-    role:    'Assistente Administrativo - Afya Educacional S.A.',
-    where:   'Experiência Profissional - Tempo Integral',
-    current: false,
-    desc:    'Otimização de processos administrativos através de automação com scripts e estruturação de dados. Foco na redução de trabalho manual e melhoria na acuracidade de relatórios gerenciais utilizando Python e análise técnica de requisitos.',
-    tags:    ['Automação', 'Análise de Dados', 'Processos', 'SQL', 'Excel Avançado', 'Scripting'],
+    period: '2024 — hoje',
+    role:   'Assistente Administrativo - Pleno',
+    org:    'Afya Educacional S.A. · Tempo integral',
+    desc:   'Automatizo rotinas administrativas e estruturo dados para reduzir trabalho manual e melhorar a acuracidade dos relatórios gerenciais.',
+    tags:   ['Python', 'SQL', 'Excel Avançado', 'Automação', 'Análise de Dados'],
   },
   {
-    period:  '2025 — 2026 - hoje',
-    role:    'Desenvolvedor Python · Projetos Próprios',
-    where:   'Portfólio pessoal & Freelance',
-    current: true,
-    desc:    'Desenvolvimento de arquiteturas backend escaláveis, com foco em automação de fluxos de trabalho e consumo de APIs RESTful. Aplicação de boas práticas de modelagem e persistência em bancos relacionais para soluções orientadas a dados.',
-    tags:    ['Python', 'FastAPI', 'APIs REST', 'PostgreSQL', 'Git', 'Backend Development'],
+    period: '2025 — hoje',
+    role:   'Desenvolvedor Web',
+    org:    'Projetos próprios e freelance',
+    desc:   'Backend com foco em automação de fluxos de trabalho e consumo de APIs RESTful, com modelagem e persistência em bancos relacionais.',
+    tags:   ['Python', 'FastAPI', 'APIs REST', 'PostgreSQL', 'Git'],
   },
   {
-    period:  '2026 — cursando',
-    role:    'Análise e Desenvolvimento de Sistemas - Afya Universidade UNIGRANRIO',
-    where:   'Graduação',
-    current: false,
-    desc:    'Graduação em Análise e Desenvolvimento de Sistemas com foco no ecossistema backend. Embasamento acadêmico em engenharia de software, algoritmos complexos e modelagem de dados relacional, com prática constante na construção de APIs, integração entre sistemas e otimização de processos via automação.',
-    tags:    ['SQL', 'APIs RESTful', 'Modelagem de Dados', 'Integração de Sistemas', 'Automação', 'Git', 'Engenharia de Software', 'Backend Development'],
+    period: '2026 — cursando previsão conclusão 2027/2',
+    role:   'Análise e Desenvolvimento de Sistemas',
+    org:    'Afya Universidade UNIGRANRIO · Graduação',
+    desc:   'Foco no ecossistema backend: engenharia de software, algoritmos e modelagem de dados relacional, com prática em APIs, integração de sistemas e automação.',
+    tags:   ['SQL', 'APIs REST', 'Modelagem de Dados', 'Integração de Sistemas', 'Git'],
   },
 ]
 
