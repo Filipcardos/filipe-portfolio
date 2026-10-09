@@ -13,7 +13,7 @@ export default function Hero() {
           )}
           <h1 className="fx" style={{ animationDelay: '.15s' }}>{PROFILE.name}</h1>
           <p className="lead fx" style={{ animationDelay: '.3s' }}>
-            Backend em Python, APIs e automação. Escrevo código para que ninguém precise repetir tarefa manual.
+            
           </p>
           <div className="cta fx" style={{ animationDelay: '.45s' }}>
             <a className="btn" href="#projects">Ver projetos</a>
