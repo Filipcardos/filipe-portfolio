@@ -6,9 +6,10 @@ const Str = ({ v }) => <span className="s">{`"${v}"`}</span>
 
 const LINES = [
   <>{'{'}</>,
-  <>{'  '}<Key v="foco" />: [<Str v="backend python" />, <Str v="Software Engineer" />],</>,
+  <>{'  '}<Key v="foco" />: [<Str v="backend python" />, <Str v="apis" />, <Str v="automação" />],</>,
+  <>{'  '}<Key v="cargos" />: [<Str v="Dev Backend" />, <Str v="Analista de Sistemas" />],</>,
   <>{'  '}<Key v="stack" />: [<Str v="python" />, <Str v="fastapi" />, <Str v="sql" />],</>,
-  <>{'  '}<Key v="formação" />: [<Str v="Análise e Desenvolvimento de Sistemas" />, <Str v="Administração" />],</>,
+  <>{'  '}<Key v="formação" />: [<Str v="ADS (cursando)" />, <Str v="Administração" />],</>,
   <>{'  '}<Key v="local" />: <Str v="Vitória da Conquista, BA" />,</>,
   <>{'  '}<Key v="modelo" />: <Str v="remoto" />,</>,
   <>{'  '}<Key v="status" />: <span className="g">{'"disponível"'}</span></>,
@@ -20,8 +21,12 @@ export default function About() {
     <section id="about" className="sec">
       <div className="wrap two">
         <Reveal>
-          <h2>Código para resolver problema.</h2>
+          <h2>Backend Python, APIs e automação.</h2>
           {PROFILE.bio.map((t, i) => <p className="lead" key={i}>{t}</p>)}
+          <div className="cta">
+            <a className="tl" href="#projects">Ver projetos</a>
+            <a className="tl" href={PROFILE.github} target="_blank" rel="noreferrer">GitHub</a>
+          </div>
         </Reveal>
         <Reveal className="win" role="img" aria-label="Resumo do perfil em formato de resposta de API" delay={120}>
           <div className="bar">
