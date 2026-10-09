@@ -6,7 +6,7 @@ const Str = ({ v }) => <span className="s">{`"${v}"`}</span>
 
 const LINES = [
   <>{'{'}</>,
-  <>{'  '}<Key v="foco" />: <Str v="backend python" />,</>, <Str v="Software Engineer" />],
+  <>{'  '}<Key v="foco" />: [<Str v="backend python" />, <Str v="Software Engineer" />],</>,
   <>{'  '}<Key v="stack" />: [<Str v="python" />, <Str v="fastapi" />, <Str v="sql" />],</>,
   <>{'  '}<Key v="formação" />: [<Str v="Análise e Desenvolvimento de Sistemas" />, <Str v="Administração" />],</>,
   <>{'  '}<Key v="local" />: <Str v="Vitória da Conquista, BA" />,</>,
