@@ -9,7 +9,7 @@ export const PROFILE = {
   location:  'Vitória da Conquista, BA — remoto',
   email:     'Ofilipe259@gmail.com',
   whatsapp:  'https://wa.me/5577998306756',
-  linkedin:  'https://www.linkedin.com/in/filipe-cardoso-919532205',
+  linkedin:  'https://www.linkedin.com/in/filipcardos',
   github:    'https://github.com/Filipcardos',
   photo:     foto,
   available: false,
